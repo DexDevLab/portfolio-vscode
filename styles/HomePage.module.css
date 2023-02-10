@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  width: 100vw;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  /* position: relative; */
+}
+
+.background {
+  font-size: 5rem;
+  font-family: "Montserrat";
+  line-height: 1.1;
+  color: var(--bg-text);
+  position: absolute;
+  word-break: unset;
+  left: 250px;
+  z-index: 1;
+  padding-left: 2rem;
+}
+
+.content {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  /* margin-left: 25px; */
+}
+
+.foreground {
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  color: var(--accent-color);
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  /* padding-left: 10px; */
+  /* padding-right: 10px; */
+}
+
+.name {
+  color: #eee;
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  /* margin-left: 25px; */
+}
+
+.bio {
+  width: max-content;
+  color: #eee;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  position: relative;
+  /* margin-left: 25px; */
+}
+
+.bio::before,
+.bio::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bio::before {
+  background: var(--main-bg);
+  animation: typewriter 2.5s steps(24) 500ms forwards;
+}
+
+.bio::after {
+  margin-left: 0.4rem;
+  width: 0.125em;
+  background: var(--accent-color);
+  animation: typewriter 2.5s steps(24) 500ms forwards,
+    blink 750ms steps(24) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+.button {
+  background: var(--accent-color);
+  font-size: 1rem;
+  /* padding: 0.5rem 1rem; */
+  margin-right: 1.5rem;
+  color: #eee;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 150px;
+  border-radius: 8px;
+}
+
+.outlined {
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  color: #eee;
+  border: 2px solid var(--accent-color);
+  background: transparent;
+  cursor: pointer;
+  height: 50px;
+  width: 150px;
+  border-radius: 8px;
+}
+
+.button:hover,
+.outlined:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.illustration {
+  z-index: 9999;
+  position: relative;
+    top: -200px;
+    left: -900px;
+  height: 300px;
+  width: 350px;
+}
+
+/* 4K Screens */
+@media screen and (max-width: 2000px) {
+  .background {
+    display: unset;
+    font-size: 5rem;
+    word-break: break-word;
+    width: 100%;
+  }
+  .name {
+    font-size: 6rem;
+  }
+  .bio {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+  .button {
+    font-size: 1.2rem;
+  }
+  .outlined {
+    font-size: 1.2rem;
+  }
+
+  .illustration {
+    position: relative;
+    top: -200px;
+    left: -900px;
+  }
+  .container {
+    padding-top: 8rem;
+    padding-bottom: 0;
+    padding-left: 2rem;
+    padding-right: 0rem;
+    width: 100%;
+  }
+  .foreground{
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .background {
+    display: unset;
+    font-size: 4rem;
+    word-break: break-word;
+    width: 80%;
+  }
+  .name {
+    font-size: 6rem;
+  }
+  .bio {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+  /* .button {
+    font-size: 2rem;
+  }
+  .outlined {
+    font-size: 2rem;
+  } */
+  .button {
+    font-size: 1.2rem;
+    width: 150px;
+    height: 40px;
+  }
+  .outlined {
+    font-size: 1.2rem;
+    width: 150px;
+    height: 40px;
+  }
+}
+
+/* iPad Pro */
+@media screen and (max-width: 1100px) {
+  .background {
+    display: unset;
+    font-size: 3.5rem;
+    word-break: break-word;
+    width: 80%;
+  }
+  /* .container {
+    display: block;
+  } */
+  /* .foreground {
+    margin: 4rem 0;
+    display: block;
+    text-align: center;
+  } */
+  .name {
+    font-size: 4rem;
+  }
+  /* .bio {
+    font-size: 1.75rem;
+    margin: 0.75rem auto 3rem;
+  } */
+
+  .button {
+    font-size: 0.9rem;
+    width: 120px;
+    height: 40px;
+  }
+  .outlined {
+    font-size: 0.9rem;
+    width: 120px;
+    height: 40px;
+  }
+  .illustration {
+    position: relative;
+    top: -190px;
+    left: -450px;
+  }
+  .container {
+    padding-top: 8rem;
+    padding-bottom: 0;
+    padding-left: 2rem;
+    padding-right: 0rem;
+  }
+  .bio {
+    font-size: 3rem;
+    margin-bottom: 8rem;
+  }
+
+}
+
+/* 
+@media screen and (max-width: 900px) {
+   .foreground {
+    margin: 2rem 0;
+  } 
+  .name {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  .bio {
+    font-size: 1.5rem;
+  }
+  .illustration {
+    z-index: 9999;
+    height: 650px;
+    width: 100%;
+  }
+
+  .background{
+    left: 240px;
+    width: 100%;
+   }
+} */
+
+@media screen and (orientation: landscape) and (max-width: 1050px) {
+  /* .container {
+    display: flex;
+  } */
+
+  .bio {
+    font-size: 3rem;
+    margin-bottom: 7rem;
+  }
+
+  .background {
+    display: unset;
+    font-size: 3.2rem;
+    word-break: break-word;
+    width: 80%;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    width: 120px;
+    height: 40px;
+  }
+  .outlined {
+    font-size: 0.9rem;
+    width: 120px;
+    height: 40px;
+  }
+  .illustration {
+    position: relative;
+    top: -190px;
+    left: -300px;
+  }
+  .container {
+    padding-top: 8rem;
+    padding-bottom: 0;
+    padding-left: 2rem;
+    padding-right: 0rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .bio {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
+
+  .background {
+    display: none;
+  }
+  .button {
+    font-size: 0.9rem;
+    width: 120px;
+    height: 40px;
+  }
+  .outlined {
+    font-size: 0.9rem;
+    width: 120px;
+    height: 40px;
+  }
+  .illustration {
+    position: relative;
+    top: -120px;
+    left: -300px;
+  }
+  .container {
+    padding-left: 3rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Phone */
+@media screen and (max-width: 600px) {
+  /* .foreground {
+    margin: 0;
+  } */
+
+  .background {
+    display: none;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+  .bio {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
+  .button {
+    font-size: 0.8rem;
+    width: 120px;
+    height: 40px;
+  }
+  .outlined {
+    font-size: 0.8rem;
+    width: 120px;
+    height: 40px;
+  }
+  .illustration {
+    top: -120px;
+    left: -100px;
+  }
+  .container {
+    padding-left: 3rem;
+    padding-right: 2rem;
+  }
+}

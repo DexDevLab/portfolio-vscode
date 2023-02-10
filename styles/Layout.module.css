@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap");
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  background: var(--main-bg);
+  /* height: 96.9vh; */
+  /* width: fit-content; */
+  /* width: 100vw; */
+  height: calc(100vh - 30px - 25px);
+}
+
+.subMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+.content {
+  padding: 2rem;
+  color: var(--text-color);
+  font-family: "JetBrains Mono", monospace;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.content {
+  scrollbar-width: 10px;
+  scrollbar-color: var(--accent-color);
+}
+
+.content::-webkit-scrollbar {
+  width: 15px;
+}
+
+.content::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-bg);
+  border-left: 1px solid #1e1f29;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border-left: 1px solid #1e1f29;
+}
+
+@media screen and (max-width: 2000px) {
+  .content {
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+}
+
+@media screen and (max-width: 1100px) {
+}
+
+@media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    padding: 2rem 1rem;
+  }
+  .subMain {
+    width: 91vw;
+  }
+}
