@@ -17,7 +17,7 @@
 <a href=""><img src="https://img.shields.io/github/last-commit/dexdevlab/portfolio-vscode?style=plastic" height="20" alt="LastCommit"></a>
 
 <a href="https://github.com/dexdevlab/portfolio-vscode/fork"><img src="https://img.shields.io/github/forks/dexdevlab/portfolio-vscode?style=plastic" height="20" alt="Fork"></a>
-<a href=""><img src="https://img.shields.io/badge/version-1.0.0-005bff?style=plastic" height="20" alt="Version"></a>
+<a href=""><img src="https://img.shields.io/badge/version-1.0.1-005bff?style=plastic" height="20" alt="Version"></a>
 <a href="https://github.com/dexdevlab/portfolio-vscode/blob/main/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/portfolio-vscode?&style=plastic" height="20" alt="License"></a>
 
 || [Stack](#section-stack) || [Primeiros Passos](#section-primeirospassos) ||  [Notas de versão](#section-changelog) ||
@@ -181,6 +181,13 @@ Você pode utilizar o Vercel e sua importação direta com o Github para publica
 ## Notas de versão
 
 </a>
+
+### v1.0.1-230213
+
+- Validação das fontes para funcionamento no Vercel
+- Criação de _document.js para inclusão de metadados HTML, incluindo as fontes
+- Resolvido erro de layout da disposição de temas na página "settings"
+- Adição da biblioteca sharp para otimização de imagens para o Next.js
 
 ### v1.0.0-230210
 

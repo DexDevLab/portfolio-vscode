@@ -4,6 +4,7 @@ import styles from "../styles/SettingsPage.module.css";
 const SettingsPage = () => {
   return (
     <>
+    <div className={styles.content}>
       <h2>Manage Themes</h2>
       <div className={styles.container}>
         <ThemeInfo
@@ -55,6 +56,7 @@ const SettingsPage = () => {
           theme="night-owl"
           description="A VS Code theme for the night owls out there."
         />
+      </div>
       </div>
     </>
   );
