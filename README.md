@@ -17,7 +17,7 @@
 <a href=""><img src="https://img.shields.io/github/last-commit/dexdevlab/portfolio-vscode?style=plastic" height="20" alt="LastCommit"></a>
 
 <a href="https://github.com/dexdevlab/portfolio-vscode/fork"><img src="https://img.shields.io/github/forks/dexdevlab/portfolio-vscode?style=plastic" height="20" alt="Fork"></a>
-<a href=""><img src="https://img.shields.io/badge/version-1.0.1-005bff?style=plastic" height="20" alt="Version"></a>
+<a href=""><img src="https://img.shields.io/badge/version-1.1.0-005bff?style=plastic" height="20" alt="Version"></a>
 <a href="https://github.com/dexdevlab/portfolio-vscode/blob/main/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/portfolio-vscode?&style=plastic" height="20" alt="License"></a>
 
 || [Stack](#section-stack) || [Primeiros Passos](#section-primeirospassos) ||  [Notas de versão](#section-changelog) ||
@@ -102,7 +102,6 @@ No diretório `utils`, configure o arquivo `portfolioSettings.js` conforme desej
 | `projectName`                  | Nome do projeto. É exibido como o nome da pasta raiz do Explorer. |
 | `devName`                      | Nome a ser exibido como header na página de início do repositório (página `home`). |
 | `devDescription`               | Descrição do nome do desenvolvedor na página de início do repositório (página `home`). |
-| `aboutHTML`                    | Componente HTML com o conteúdo completo da página `about`. Aqui, você pode criar um HTML customizável para essa página em específico. **Para uma maior personalização desse conteúdo, você também pode editar o componente `pages/about.jsx` diretamente.** |
 
 <br>
 
@@ -181,6 +180,11 @@ Você pode utilizar o Vercel e sua importação direta com o Github para publica
 ## Notas de versão
 
 </a>
+
+### v1.1.0-230213
+
+- Conteúdo da página "about" agora inserido dentro do Componente de mesmo nome para melhor responsividade
+- Criado componente de Badge para inserir badges do Github
 
 ### v1.0.1-230213
 
