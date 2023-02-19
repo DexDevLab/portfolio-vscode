@@ -215,7 +215,7 @@ const Explorer = () => {
                         <ExplorerItem
                           active={item.enabled}
                           spacing={"14px"}
-                          path={item.path}
+                          path={item.enabled ? item.path : ""}
                           key={"api-" + item.label + "-" + idx}
                           itemName={item.name}
                           icon={item.icon}
@@ -231,7 +231,7 @@ const Explorer = () => {
                     <ExplorerItem
                       active={item.enabled}
                       spacing={"14px"}
-                      path={item.path}
+                      path={item.enabled ? item.path : ""}
                       key={"root-" + item.label + "-" + idx}
                       itemName={item.name}
                       icon={item.icon}
@@ -289,7 +289,7 @@ const Explorer = () => {
                     <ExplorerItem
                       active={item.enabled}
                       spacing={"14px"}
-                      path={item.path}
+                      path={item.enabled ? item.path : ""}
                       key={"styles-" + item.label + "-" + idx}
                       itemName={item.name}
                       icon={item.icon}
@@ -347,7 +347,7 @@ const Explorer = () => {
                     <ExplorerItem
                       active={item.enabled}
                       spacing={"14px"}
-                      path={item.path}
+                      path={item.enabled ? item.path : ""}
                       key={"utils-" + item.label + "-" + idx}
                       itemName={item.name}
                       icon={item.icon}
@@ -362,7 +362,7 @@ const Explorer = () => {
               return (
                 <ExplorerItem
                   active={item.enabled}
-                  path={item.path}
+                  path={item.enabled ? item.path : ""}
                   key={"pages-" + item.label + "-" + idx}
                   itemName={item.name}
                   icon={item.icon}

@@ -78,6 +78,33 @@
   --article-bg: #21222c;
 }
 
+/* Github Dark */
+[data-theme="github-dark"] {
+  --main-bg: #24292e;
+  --bg-text: rgba(56, 58, 61, 0.35);
+  --text-color: #efefef;
+  --accent-color: #f9826c;
+  --titlebar-bg: #1f2428;
+  --sidebar-bg: #24292e;
+  --sidebar-hover-bg: #1f2428;
+  --explorer-bg: #1f2428;
+  --explorer-hover-bg: #24292e;
+  --explorer-border: #161a1d;
+  --tabs-bg: #1f2428;
+  --tab-bg: #1f2428;
+  --tab-active-bg: #24292e;
+  --tab-active-border: #f9826c;
+  --tab-border: #24292e;
+  --bottombar-bg: #24292e;
+  --bottombar-border: #1b1f23;
+  --button-bg: #176f2c;
+  --button-text: #dcffe4;
+  --bottombar-hover-bg: #4f4f52;
+  --scrollbar-track-bg: #24292e;
+  --scrollbar-thumb-bg: #333536;
+  --article-bg: #1f2428;
+}
+
 /* Dracula */
 [data-theme="dracula"] {
   --main-bg: #282a36;

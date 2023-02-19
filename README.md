@@ -17,7 +17,7 @@
 <a href=""><img src="https://img.shields.io/github/last-commit/dexdevlab/portfolio-vscode?style=plastic" height="20" alt="LastCommit"></a>
 
 <a href="https://github.com/dexdevlab/portfolio-vscode/fork"><img src="https://img.shields.io/github/forks/dexdevlab/portfolio-vscode?style=plastic" height="20" alt="Fork"></a>
-<a href=""><img src="https://img.shields.io/badge/version-1.1.0-005bff?style=plastic" height="20" alt="Version"></a>
+<a href=""><img src="https://img.shields.io/badge/version-1.1.1-005bff?style=plastic" height="20" alt="Version"></a>
 <a href="https://github.com/dexdevlab/portfolio-vscode/blob/main/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/portfolio-vscode?&style=plastic" height="20" alt="License"></a>
 
 || [Stack](#section-stack) || [Primeiros Passos](#section-primeirospassos) ||  [Notas de versão](#section-changelog) ||
@@ -180,6 +180,12 @@ Você pode utilizar o Vercel e sua importação direta com o Github para publica
 ## Notas de versão
 
 </a>
+
+### v1.1.1-230219
+
+- Resolvido bug onde o Tema Github Dark não estava sendo aplicado
+- Alterada a disposição e altura mínima dos cards de repositório
+- Resolvido bug onde links desativados continuavam funcionando
 
 ### v1.1.0-230213
 

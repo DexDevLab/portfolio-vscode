@@ -7,7 +7,7 @@ export const portfolioSettings = {
   devDescription: "Full Stack Developer",
   contentGithub: {
     enabled: true,
-    limitRepos: 6,
+    limitRepos: 8,
     calendarTheme: {
       level0: "#1A1B30",
       level1: "#5A11A3",
