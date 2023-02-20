@@ -7,7 +7,7 @@
   padding: 1rem;
   margin-left: auto;
   margin-right: auto;
-  width: 350px;
+  width: 100%;
   min-height: 260px;
   /* min-width: 350px; */
 }
@@ -52,4 +52,10 @@
 .icon {
   color: var(--accent-color);
   margin-right: 0.3rem;
+}
+
+@media screen and (max-width: 1800px) {
+  .card {
+    min-height: 360px;
+  }
 }

@@ -39,9 +39,10 @@
 .containerLoader {
   padding: 0;
   margin: 0;
-  padding-left: 37%;
-  height: 100%;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /* height: 100%; */
+  width: max-content;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -61,9 +62,27 @@
   margin-right: auto;
 }
 
-@media screen and (max-width: 1100px) {
-  .containerLoader {
+@media screen and (max-width: 1800px) {
+  /* .containerLoader {
     padding-left: 25%;
+  } */
+
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .githubMain{
+    width: 90%;
+  }
+  
+}
+
+@media screen and (max-width: 1100px) {
+  /* .containerLoader {
+    padding-left: 25%;
+  } */
+  .container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -72,8 +91,25 @@
     font-size: 1rem;
   }
 
-  .containerLoader {
-    padding-left: 20%;
+  .subtitle{
+    text-align: center;
+  }
+
+  .user div{
+    margin-bottom: 3px;
+    height: 75px;
+  }
+  
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* .containerLoader {
+    padding-left: 25%;
+  } */
+
+  .githubMain{
+    width: 80%;
   }
 }
 
@@ -81,11 +117,17 @@
   .user h3 {
     font-size: 14px;
   }
+
+  .subtitle{
+    text-align: center;
+  }
+
   .username {
     display: none;
   }
 
-  .containerLoader {
-    padding-left: 25%;
+  .githubMain{
+    width: 90%;
   }
+
 }

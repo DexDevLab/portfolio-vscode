@@ -27,7 +27,7 @@ export default function HomePage() {
             )}
           </div>
         </div>
-        <Illustration className={styles.illustration} />
+        {/* <Illustration className={styles.illustration} /> */}
       </div>
     </div>
   );

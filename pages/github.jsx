@@ -63,6 +63,9 @@ const GithubPage = ({ ...props }) => {
       }
     );
     const repoJson = await repoRes.json();
+
+    // console.log(repoJson);
+
     let repoDates = await Promise.all(
       Array.from(repoJson).map(async (repo, index) => {
         const commitsRes = await fetch(
@@ -97,7 +100,13 @@ const GithubPage = ({ ...props }) => {
           };
         }
       })
-      .filter((i) => i)
+      .filter((i) => {
+        if (portfolioSettings.contentGithub.showForkRepos) {
+          return i;
+        } else if (!i.fork) {
+          return i;
+        }
+      })
       .sort((a, b) => new Date(b.repoDate) - new Date(a.repoDate));
 
     setData({ user, repos });
@@ -106,20 +115,19 @@ const GithubPage = ({ ...props }) => {
   return (
     <>
       {loading ? (
-          <div className={styles.containerLoader}>
-            <PuffLoader
-              color={portfolioSettings.contentGithub.calendarTheme.level4}
-              loading={loading}
-              size={200}
-              aria-label="Loading Spinner"
-              data-testid="loader"
-            />
-          </div>
+        <div className={styles.containerLoader}>
+          <PuffLoader
+            color={portfolioSettings.contentGithub.calendarTheme.level4}
+            loading={loading}
+            size={200}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+        </div>
       ) : (
-        <div className={styles.githubMain}
-        >
+        <div className={styles.githubMain}>
           <div className={styles.user}>
-            <div>
+            <div className={styles.avatarDiv}>
               <Image
                 src={user.avatar_url}
                 className={styles.avatar}
@@ -138,7 +146,7 @@ const GithubPage = ({ ...props }) => {
             </div>
           </div>
           <div>
-            <div>
+            <div className={styles.subtitle}>
               <h4>Atualmente trabalhando em:</h4>
             </div>
           </div>
@@ -154,7 +162,7 @@ const GithubPage = ({ ...props }) => {
               labels={labels}
               dateFormat={"dd/MM/yyyy"}
               showWeekdayLabels
-              blockSize={20}
+              blockSize={16}
               blockRadius={20}
               // hideColorLegend
               // hideMonthLabels
@@ -170,7 +178,7 @@ const GithubPage = ({ ...props }) => {
 
 export async function getServerSideProps() {
   return {
-    props: { title: "github.md" }
+    props: { title: "github.md" },
   };
 }
 

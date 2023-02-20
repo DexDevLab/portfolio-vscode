@@ -49,6 +49,32 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 50px;
+    row-gap: 25px;
+    column-gap: 50px;
     justify-content: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .subtitles {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .titles {
+    font-size: 2.5rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .subtitles {
+    width: 80%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .sectionLabel{
+    font-size: 1rem;
+    padding-bottom: 50px;
+}
 }
