@@ -17,7 +17,7 @@
 <a href=""><img src="https://img.shields.io/github/last-commit/dexdevlab/portfolio-vscode?style=plastic" height="20" alt="LastCommit"></a>
 
 <a href="https://github.com/dexdevlab/portfolio-vscode/fork"><img src="https://img.shields.io/github/forks/dexdevlab/portfolio-vscode?style=plastic" height="20" alt="Fork"></a>
-<a href=""><img src="https://img.shields.io/badge/version-1.2.0-005bff?style=plastic" height="20" alt="Version"></a>
+<a href=""><img src="https://img.shields.io/badge/version-1.3.0-005bff?style=plastic" height="20" alt="Version"></a>
 <a href="https://github.com/dexdevlab/portfolio-vscode/blob/main/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/portfolio-vscode?&style=plastic" height="20" alt="License"></a>
 
 || [Stack](#section-stack) || [Primeiros Passos](#section-primeirospassos) ||  [Notas de versão](#section-changelog) ||
@@ -181,6 +181,10 @@ Você pode utilizar o Vercel e sua importação direta com o Github para publica
 ## Notas de versão
 
 </a>
+
+### v1.3.0-230303
+
+- Adicionado badge de Webpack
 
 ### v1.2.0-230220
 

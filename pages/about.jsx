@@ -377,6 +377,12 @@ const AboutPage = () => {
           src: "https://img.shields.io/badge/Babel-F9DC3e?style=flat&logo=babel&logoColor=black",
           link: "https://babeljs.io",
         },
+        {
+          height: "22",
+          alt: "Webpack",
+          src: "https://img.shields.io/badge/webpack-%238DD6F9.svg?style=flat&logo=webpack&logoColor=black",
+          link: "https://webpack.js.org",
+        },
       ],
     },
     {
@@ -463,6 +469,12 @@ const AboutPage = () => {
           alt: "Postman",
           src: "https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white",
           link: "https://www.postman.com",
+        },
+        {
+          height: "22",
+          alt: "Grafana",
+          src: "https://img.shields.io/badge/grafana-%23F46800.svg?style=flat&logo=grafana&logoColor=white",
+          link: "https://grafana.com",
         },
       ],
     },
