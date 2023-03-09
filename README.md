@@ -235,6 +235,10 @@ Para o funcionamento adequado do projeto, crie um arquivo chamado `.env.local` c
 
 </a>
 
+### v1.3.2-230309
+
+- Atualização do workflow
+
 ### v1.3.1-230309
 
 - Adicionado workflow

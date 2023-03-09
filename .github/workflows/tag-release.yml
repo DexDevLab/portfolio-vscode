@@ -17,28 +17,28 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: "✅ Checkout code"
         uses: actions/checkout@master
 
-      - name: Extract version
+      - name: "📦 Extracting version from package.json"
         id: get-package-version
         uses: jaywcjlove/github-action-package@main
 
-      - name: Printing package version
+      - name: "📜 Printing package version"
         run: echo ${{ steps.get-package-version.outputs.version }}
 
-      - name: "Gathering tag name removing timestamp"
+      - name: "🏷️ Gathering tag name removing timestamp"
         if: "!contains(steps.get-package-version.outputs.version, env.SUFFIX)"
         id: get-ver
         run: |
           ver=$(echo ${{ steps.get-package-version.outputs.version }} | cut -d- -f1)
           echo "::set-output name=ver::$ver"
 
-      - name: Printing tag and release version
+      - name: "📜 Printing tag and release version"
         if: "!contains(steps.get-package-version.outputs.version, env.SUFFIX)"
         run: echo "${{ steps.get-ver.outputs.ver }}"
 
-      - name: Generating Tag and Release
+      - name: "⚙️ Generating Tag and Release"
         if: "!contains(steps.get-package-version.outputs.version, env.SUFFIX)"
         uses: "marvinpinto/action-automatic-releases@latest"
         with:

@@ -1,6 +1,6 @@
 {
   "name": "portfolio-vscode",
-  "version": "v1.3.1-230309",
+  "version": "v1.3.2-230309",
   "private": true,
   "scripts": {
     "dev": "next dev",
