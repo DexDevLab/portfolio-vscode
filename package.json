@@ -1,6 +1,7 @@
 {
   "name": "portfolio-vscode",
-  "version": "v1.3.2-230309",
+  "version": "v1.3.3-230309",
+  "description": "Portfólio de Desenvolvedor no estilo visual do VSCode, baseado em um projeto do Desenvolvedor Nitin Ranganath",
   "private": true,
   "scripts": {
     "dev": "next dev",

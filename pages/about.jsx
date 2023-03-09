@@ -275,7 +275,7 @@ const AboutPage = () => {
         {
           height: "22",
           alt: "SQLite",
-          src: "https://img.shields.io/badge/sqlite-%2307405e.svg?style=flat&logo=sqlite&logoColor=white",
+          src: "https://img.shields.io/badge/SQLite-%2307405e.svg?style=flat&logo=sqlite&logoColor=white",
           link: "https://www.sqlite.org/index.html",
         },
       ],
@@ -308,12 +308,6 @@ const AboutPage = () => {
         },
         {
           height: "22",
-          alt: "Notepad++",
-          src: "https://img.shields.io/badge/Notepad++-90E59A.svg?style=flat&logo=notepad%2b%2b&logoColor=black",
-          link: "https://notepad-plus-plus.org",
-        },
-        {
-          height: "22",
           alt: "VSCode",
           src: "https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=flat&logo=visual-studio-code&logoColor=white",
           link: "https://code.visualstudio.com",
@@ -323,6 +317,18 @@ const AboutPage = () => {
           alt: "VisualStudio",
           src: "https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=flat&logo=visual-studio&logoColor=white",
           link: "https://visualstudio.microsoft.com/pt-br/",
+        },
+        {
+          height: "22",
+          alt: "Notepad++",
+          src: "https://img.shields.io/badge/Notepad++-90E59A.svg?style=flat&logo=notepad%2b%2b&logoColor=black",
+          link: "https://notepad-plus-plus.org",
+        },
+        {
+          height: "22",
+          alt: "SublimeText",
+          src: "https://img.shields.io/badge/Sublime_Text-%23575757.svg?style=flat&logo=sublime-text&logoColor=important",
+          link: "https://www.sublimetext.com",
         },
       ],
     },
@@ -390,6 +396,12 @@ const AboutPage = () => {
       badges: [
         {
           height: "22",
+          alt: "GithubActions",
+          src: "https://img.shields.io/badge/github%20actions-%232671E5.svg?style=plastic&logo=githubactions&logoColor=white",
+          link: "https://docs.github.com/pt/actions",
+        },
+        {
+          height: "22",
           alt: "Powershell",
           src: "https://img.shields.io/badge/PowerShell-%235391FE.svg?style=flat&logo=powershell&logoColor=white",
           link: "https://learn.microsoft.com/pt-br/powershell/",
@@ -397,12 +409,12 @@ const AboutPage = () => {
         {
           height: "22",
           alt: "Bash",
-          src: "https://img.shields.io/badge/shell_script-%23121011.svg?style=flat&logo=gnu-bash&logoColor=white",
+          src: "https://img.shields.io/badge/Bash-%23121011.svg?style=flat&logo=gnu-bash&logoColor=white",
           link: "https://devdocs.io/bash/",
         },
         {
           height: "22",
-          alt: "Windows Terminal",
+          alt: "WindowsTerminal",
           src: "https://img.shields.io/badge/Windows%20Terminal-%234D4D4D.svg?style=flat&logo=windows-terminal&logoColor=white",
           link: "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
         },
@@ -413,14 +425,14 @@ const AboutPage = () => {
       badges: [
         {
           height: "22",
-          alt: "BitBucket",
-          src: "https://img.shields.io/badge/bitbucket-%230047B3.svg?style=flat&logo=bitbucket&logoColor=white",
+          alt: "Bitbucket",
+          src: "https://img.shields.io/badge/Bitbucket-%230047B3.svg?style=flat&logo=bitbucket&logoColor=white",
           link: "https://bitbucket.org",
         },
         {
           height: "22",
-          alt: "Gith",
-          src: "https://img.shields.io/badge/git-%23F05033.svg?style=flat&logo=git&logoColor=white",
+          alt: "Git",
+          src: "https://img.shields.io/badge/Git-%23F05033.svg?style=flat&logo=git&logoColor=white",
           link: "https://git-scm.com",
         },
         {
@@ -432,13 +444,13 @@ const AboutPage = () => {
         {
           height: "22",
           alt: "Github",
-          src: "https://img.shields.io/badge/github-%23121011.svg?style=flat&logo=github&logoColor=white",
+          src: "https://img.shields.io/badge/Github-%23121011.svg?style=flat&logo=github&logoColor=white",
           link: "https://github.com",
         },
         {
           height: "22",
           alt: "GitLab",
-          src: "https://img.shields.io/badge/gitlab-%23181717.svg?style=flat&logo=gitlab&logoColor=white",
+          src: "https://img.shields.io/badge/GitLab-%23181717.svg?style=flat&logo=gitlab&logoColor=white",
           link: "https://about.gitlab.com",
         },
       ],
@@ -448,8 +460,8 @@ const AboutPage = () => {
       badges: [
         {
           height: "22",
-          alt: "Jest",
-          src: "https://img.shields.io/badge/-jest-%23C21325?style=flat&logo=jest&logoColor=white",
+          alt: "JEST",
+          src: "https://img.shields.io/badge/-JEST-008204?style=flat&logo=jest&logoColor=white",
           link: "https://jestjs.io/pt-BR/",
         },
         {
@@ -490,7 +502,7 @@ const AboutPage = () => {
         {
           height: "22",
           alt: "HyperV",
-          src: "https://img.shields.io/badge/-Hyper_V-017AD7?logoColor=white&style=flat",
+          src: "https://img.shields.io/badge/HyperV-0078D6?style=flat&logo=windows&logoColor=white",
           link: "https://learn.microsoft.com/pt-br/windows-server/virtualization/hyper-v/hyper-v-technology-overview",
         },
       ],
@@ -501,7 +513,7 @@ const AboutPage = () => {
         {
           height: "22",
           alt: "NextCloud",
-          src: "https://img.shields.io/badge/Next%20Cloud-0B94DE?style=flat&logo=nextcloud&logoColor=white",
+          src: "https://img.shields.io/badge/Nextcloud-0270ba?style=flat&logo=nextcloud&logoColor=white",
           link: "https://nextcloud.com",
         },
         {
@@ -613,7 +625,7 @@ const AboutPage = () => {
       ],
     },
     {
-      sectionLabel: "Others",
+      sectionLabel: "Other",
       badges: [
         {
           height: "22",
