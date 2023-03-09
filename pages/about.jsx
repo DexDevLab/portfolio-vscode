@@ -108,12 +108,12 @@ const AboutPage = () => {
         {
           height: "22",
           alt: "ExpressJS",
-          src: "https://img.shields.io/badge/Express.js-404D59?style=flat",
+          src: "https://img.shields.io/badge/Express.js-404D59?style=flat&logo=express",
           link: "https://expressjs.com/pt-br/",
         },
         {
           height: "22",
-          alt: "Nginx",
+          alt: "NGINX",
           src: "https://img.shields.io/badge/nginx-%23009639.svg?style=flat&logo=nginx&logoColor=white",
           link: "https://www.nginx.com",
         },

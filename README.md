@@ -13,22 +13,47 @@
 <a href="https://html.com"><img src="https://img.shields.io/badge/HTML5-%23E34F26.svg?style=plastic&logo=html5&logoColor=white" height="20" alt="HTML5"></a>
 <a href="https://www.javascript.com"><img src="https://img.shields.io/badge/JavaScript-%23323330.svg?style=plastic&logo=javascript&logoColor=%23F7DF1E" height="20" alt="JavaScript"></a>
 
-<a href=""><img src="https://img.shields.io/github/languages/code-size/dexdevlab/portfolio-vscode?style=plastic" height="20" alt="CodeSize"></a> <a href=""><img src="https://img.shields.io/github/repo-size/dexdevlab/portfolio-vscode?style=plastic" height="20" alt="RepoSize"></a>
-<a href=""><img src="https://img.shields.io/github/last-commit/dexdevlab/portfolio-vscode?style=plastic" height="20" alt="LastCommit"></a>
+<a href=""><img src="https://img.shields.io/badge/maintenance-actively--developed-brightgreen.svg?style=plastic" height="20" alt="Maintenance-actively-developed"/></a>
+<a href=""><img src="https://img.shields.io/github/last-commit/dexdevlab/portfolio-vscode?style=plastic" height="20" alt="LastCommit"/></a>
+<a href=""><img src="https://snyk.io/test/github/dexdevlab/portfolio-vscode/badge.svg?style=plastic" height="20" alt="Snyk"/></a>
+
+<a href=""><img src="https://img.shields.io/github/repo-size/dexdevlab/portfolio-vscode?style=plastic" height="20" alt="RepoSize"></a>
+<a href=""><img src="https://img.shields.io/github/languages/code-size/dexdevlab/portfolio-vscode?style=plastic" height="20" alt="CodeSize"></a>
+<a href=""><img src="https://img.shields.io/github/contributors/dexdevlab/portfolio-vscode?style=plastic" height="20" alt="Contributors"></a>
 
 <a href="https://github.com/dexdevlab/portfolio-vscode/fork"><img src="https://img.shields.io/github/forks/dexdevlab/portfolio-vscode?style=plastic" height="20" alt="Fork"></a>
-<a href=""><img src="https://img.shields.io/badge/version-1.3.0-005bff?style=plastic" height="20" alt="Version"></a>
+<a href=""><img src="https://img.shields.io/badge/version-1.3.1-140126?style=plastic" height="20" alt="Version"></a>
 <a href="https://github.com/dexdevlab/portfolio-vscode/blob/main/LICENSE"><img src="https://img.shields.io/github/license/dexdevlab/portfolio-vscode?&style=plastic" height="20" alt="License"></a>
 
-|| [Stack](#section-stack) || [Primeiros Passos](#section-primeirospassos) ||  [Notas de versão](#section-changelog) ||
+<!-- || [Conteúdo](#section-conteudo) || [Características](#section-caracteristicas) || [Stack](#section-stack) || [Documentação](#section-documentacao) || [Instruções](#section-instrucoes) || -->
+|| [Conteúdo](#section-conteudo) || [Características](#section-caracteristicas) || [Stack](#section-stack) || [Instruções](#section-instrucoes) ||
 
-|| [Autores](#section-autores) || [Contato](#section-contato) || [Licença](#section-licenca) ||
+|| [Variáveis de Ambiente](#section-vars) || [Notas de versão](#section-changelog) || [Autores](#section-autores) || [Contato](#section-contato) || [Licença](#section-licenca) ||
 
 </div>
 
 <hr>
 
-<p>Este projeto inclui melhorias funcionais e maior personalização, permitindo facilmente que qualquer desenvolvedor possa usá-lo com maior liberdade para exibir seus portfólios. Abaixo seguem algumas características:</p>
+<a name="section-conteudo">
+
+## Conteúdo
+
+</a>
+
+<br>
+
+Um portfólio de artigos e projetos com o objetivo de exibir de uma maneira original e criativa os trabalhos mais recentes do desenvolvedor.
+Este projeto inclui melhorias funcionais e maior personalização, permitindo facilmente que qualquer desenvolvedor possa usá-lo com maior liberdade para exibir seus portfólios.
+
+<hr>
+
+<a name="section-caracteristicas">
+
+## Características
+
+</a>
+
+<br>
 
 - **Personalização por um único arquivo:** A utilização do arquivo de configuração para personalizar todo o projeto facilita e centraliza customizações que não envolvam estilizações estruturais nos componentes.
 
@@ -40,28 +65,44 @@
 
 - **Melhorias de Interface:** Explorador de pastas mais semelhante ao VSCode, com diretórios expansíveis e arquivos com melhor comportamento visual, de acordo com as páginas configuradas.
 
+<hr>
+
 <a name="section-stack">
 
 ## Stack
 
 </a>
 
-- **Tipo de Software:** Aplicação Web Dinâmica
+<br>
+
 - **Linguagem Principal:** [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - **Linguagem de Marcação:** [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - **Linguagem de Estilização:** [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - **Framework Principal:** [React](https://reactjs.org)
 - **Framework Backend:** [Node.js](https://nodejs.org/en/)
 - **Plataforma de Publicação:** [Vercel](https://vercel.com)
-- **Arquiteturas:** MVC, Web API
 
 <hr>
 
-<a name="section-primeirospassos">
+<!-- <a name="section-documentacao">
 
-## Primeiros passos
+## Documentação
 
 </a>
+
+<br>
+
+Lorem Ipsum
+
+<hr> -->
+
+<a name="section-instrucoes">
+
+## Instruções
+
+</a>
+
+<br>
 
 ### Clonando o repositório
 
@@ -73,18 +114,7 @@
 
 `yarn` ou `npm install`
 
-### Configurando as variáveis de ambiente
-
-Para o funcionamento adequado do projeto, crie um arquivo chamado `.env.local` com as seguintes variáveis:
-
-| Variável                      | Descrição                                                                                                                       |
-|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| `NEXT_PUBLIC_API_URL`         | Endereço de execução do servidor backend. Se em ambiente local, usará `http://localhost:3000/api`                               |
-| `NEXT_PUBLIC_DEV_TO_API_KEY`  | Chave API de conexão para a rede Dev.to, necessário para apresentar as informações da página "articles"                         |
-| `NEXT_PUBLIC_GITHUB_API_KEY`  | Chave API de conexão para a API de dados de repositório do Github, necessário para apresentar as informações da página "github" |
-| `NEXT_PUBLIC_GITHUB_USERNAME`  | Nome de usuário do perfil Github  |
-| `NEXT_PUBLIC_NOTION_API_TOKEN`  | Chave API do Notion, necessário para utilizar formulários de contato da página "contact"  |
-| `NEXT_PUBLIC_NOTION_DATABASE_ID`  | ID de Banco de Dados Notion, necessário para utilizar formulários de contato da página "contact"  |
+<br>
 
 ### Configurando portfolioSettings.js
 
@@ -94,7 +124,7 @@ No diretório `utils`, configure o arquivo `portfolioSettings.js` conforme desej
 
 #### Configurações Principais
 
-| Objeto                         | Descrição                                                                         |
+| Propriedade                         | Descrição                                                                         |
 |--------------------------------|-----------------------------------------------------------------------------------|
 | `titleBarTag`                  | Texto exibido na barra de título da janela do VSCode. |
 | `repoLocation`                 | Localização da sua cópia do repositório do Portfólio VSCode. |
@@ -109,7 +139,7 @@ No diretório `utils`, configure o arquivo `portfolioSettings.js` conforme desej
 
 Esse objeto define personalizações a respeito da página `github` e seu conteúdo.
 
-| Objeto                         | Descrição                                                                         |
+| Propriedade                         | Descrição                                                                         |
 |--------------------------------|-----------------------------------------------------------------------------------|
 | `enabled`       | Se definido como `false`, remove da exibição a página `github`. |
 | `limitRepos`    | Organiza e limita a quantidade de repositórios a exibir na página `github`, baseado no número inteiro informado. |
@@ -122,7 +152,7 @@ Esse objeto define personalizações a respeito da página `github` e seu conte�
 
 Esse objeto define personalizações a respeito da página `projects` e seu conteúdo.
 
-| Objeto                         | Descrição                                                                         |
+| Propriedade                         | Descrição                                                                         |
 |--------------------------------|-----------------------------------------------------------------------------------|
 | `enabled`       | Se definido como `false`, remove da exibição a página `projects`. |
 | `projects`    | Enumera os projetos, os quais serão exibidos como cards. Possui as seguintes propriedades: `id` - O ID do card; `name` - O nome do projeto; `image` - Imagem de miniatura como referência do projeto; `tags` - Tags para serem utilizadas como referências do projeto; `source_code` - Link para o repositório do código-fonte do projeto; `demo` - URL do endereço de teste em tempo real do projeto. |
@@ -133,7 +163,7 @@ Esse objeto define personalizações a respeito da página `projects` e seu cont
 
 Esse objeto define personalizações a respeito da página `articles` e seu conteúdo.
 
-| Objeto                         | Descrição                                                                         |
+| Propriedade                         | Descrição                                                                         |
 |--------------------------------|-----------------------------------------------------------------------------------|
 | `enabled`       | Se definido como `false`, remove da exibição a página `articles`. |
 | `devToProfileUrl`    | Link do perfil Dev.to para exibição. |
@@ -144,7 +174,7 @@ Esse objeto define personalizações a respeito da página `articles` e seu cont
 
 Esse objeto define personalizações a respeito da página `contact` e seu conteúdo.
 
-| Objeto                         | Descrição                                                                         |
+| Propriedade                         | Descrição                                                                         |
 |--------------------------------|-----------------------------------------------------------------------------------|
 | `enabled`       | Se definido como `false`, remove da exibição a página `contact`. |
 | `showContactForm`    | Se definido como `false`, remove da exibição o formulário de contato. |
@@ -156,7 +186,7 @@ Esse objeto define personalizações a respeito da página `contact` e seu conte
 
 Esse objeto define dados de metadata HTML para compor o site em produção. As informações são carregadas no Componente `Head.jsx`
 
-| Objeto                         | Descrição                                                                         |
+| Propriedade                         | Descrição                                                                         |
 |--------------------------------|-----------------------------------------------------------------------------------|
 | `titleTag`       | meta "title" |
 | `description`    | meta "description" |
@@ -170,9 +200,32 @@ Execute `yarn dev` ou `npm run dev` para executar o projeto. O site estará aber
 
 **Lembre-se de executar `yarn build` ou `npm run build` para buildar o projeto corretamente para ser utilizado em produção se necessário.**
 
+<br>
+
 ### Distribuindo e publicando seu portfólio
 
 Você pode utilizar o Vercel e sua importação direta com o Github para publicar online seu projeto. Para mais informações, consulte a [documentação](https://vercel.com/new) do Vercel.
+
+<hr>
+
+<a name="section-vars">
+
+### Variáveis de Ambiente
+
+</a>
+
+<br>
+
+Para o funcionamento adequado do projeto, crie um arquivo chamado `.env.local` com as seguintes variáveis:
+
+| Variável                      | Descrição                                                                                                                       |
+|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| `NEXT_PUBLIC_API_URL`         | Endereço de execução do servidor backend. Se em ambiente local, usará `http://localhost:3000/api`                               |
+| `NEXT_PUBLIC_DEV_TO_API_KEY`  | Chave API de conexão para a rede Dev.to, necessário para apresentar as informações da página "articles"                         |
+| `NEXT_PUBLIC_GITHUB_API_KEY`  | Chave API de conexão para a API de dados de repositório do Github, necessário para apresentar as informações da página "github" |
+| `NEXT_PUBLIC_GITHUB_USERNAME`  | Nome de usuário do perfil Github  |
+| `NEXT_PUBLIC_NOTION_API_TOKEN`  | Chave API do Notion, necessário para utilizar formulários de contato da página "contact"  |
+| `NEXT_PUBLIC_NOTION_DATABASE_ID`  | ID de Banco de Dados Notion, necessário para utilizar formulários de contato da página "contact"  |
 
 <hr>
 
@@ -181,6 +234,13 @@ Você pode utilizar o Vercel e sua importação direta com o Github para publica
 ## Notas de versão
 
 </a>
+
+### v1.3.1-230309
+
+- Adicionado workflow
+- Atualização da documentação
+- Ajuste em alguns badges
+- Ajuste de layout de projetos na página 'github'
 
 ### v1.3.0-230303
 
