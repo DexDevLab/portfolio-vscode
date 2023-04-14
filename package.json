@@ -16,7 +16,7 @@
     "react-github-calendar": "^3.2.2",
     "react-spinners": "^0.13.8",
     "react-tooltip": "4.5.1",
-    "sharp": "^0.31.3",
+    "sharp": "^0.32.0",
     "yarn": "^1.22.19"
   }
 }
